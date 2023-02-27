@@ -6,22 +6,123 @@
 
 #grid_wrapper{
     display: grid;
+    background-color: #f1ebdf;
+    grid-template-columns: minmax(200px, 1fr) 800px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "he na"
+    "se se";
 }
 
 #header{
     display: flex;
+    height: 120px;
+    position: fixed;
+    grid-area: he;
+    background-color: white;
+}
+
+#times{
+    display: grid;
+    margin-left: 50px;
+    font-size: smaller;
+    margin-top: 20px;
+}
+
+#logo{
+    position: relative;
     justify-content: center;
     align-items: center;
-    height: 75px;
-
+    margin-left: 435px;
+    height: 110px;
+    width: auto;
+    margin-top: 10px;
 }
 
-#div_tider{
-    display: grid;
-    margin-left: 10px;
-}
-
-#div_text{
-    margin: 10px;
+#burger_menu{
+    position: relative;
     display: flex;
+    align-items: center;
+    grid-area: na;
+    margin-left: 490px;
+}
+
+#burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.5s;
+}
+
+#nav-links {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 150px;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: -500px;
+    right: 0px;
+    transition: all 0.5s;
+}
+
+#nav-links li {
+    list-style: none;
+}
+
+#nav-links a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    letter-spacing: 0.1875rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#burger {
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.burger_toggle #burger_line_2 {
+    opacity: 0;
+}
+
+.burger_toggle #burger_line_1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger_toggle #burger_line_3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav_active {
+    transform: translateY(580px);
+}
+
+#section_home{
+text-align: center;
+justify-content: center;
+}
+
+#section_image{
+    height: 850px;
+    border: 3px solid black;
+}
+
+#article_text{
+    margin-top: 10px;
+    justify-content: center;
+    width: 900px;
+    margin-left: 200px;
+}
+
+#welcome{
+    border-bottom: 2px solid black;
+    margin-bottom: 5px;
 }
