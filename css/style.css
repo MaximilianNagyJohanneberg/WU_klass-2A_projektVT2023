@@ -215,7 +215,7 @@ img{
     box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
 }
 .name_review{
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: rgb(50, 50, 50);
     margin-bottom: .25rem;
 }
@@ -289,6 +289,11 @@ ul{
     padding-left: 10px;
 }
 
+.container{
+    border-top: 3px solid black;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 
 
@@ -321,12 +326,12 @@ ul{
 
 .about_us_pics{
     height: 350px;
-    width: 450px;
+    width: 500px;
     background-size: cover;
 }
 
 .picture_text{
-    width: 450px;
+    width: 500px;
     height: 350px;
     margin: 30px;
 }
@@ -362,7 +367,7 @@ ul{
 }
 #art_history{
     display: flex;
-    margin-left: 180px;
+    margin-left: 130px;
 }
 #history_pic{
     background-image: url(../misc/svart-vit\ bageri3.png);
@@ -395,7 +400,7 @@ ul{
     margin-top: 100px;
 }
 
-.assortment_title{
+.our_assortment{
     margin-left: 20%;
     margin-right: 20%;
     border-bottom: 2px solid black;
@@ -403,8 +408,115 @@ ul{
     text-align: center;
 }
 
-.assortment_title h3{
+.our_assortment h3{
     font-size: 40px;
     margin-bottom: 10px;
 }
 
+#assortment_sec_1{
+    height: 350px;
+    display: flex;
+    
+}
+
+.assortments{
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.assortment_card{
+    height: 300px;
+    width: 250px;
+    background-color: #f1ebdf;
+    display: grid;
+    box-shadow: 2px 2px 10px black;
+    text-align: center;
+}
+
+.assortment_image{
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+}
+
+.read_more{
+    height: 25px;
+    width: 90px;
+    margin-left: 80px;
+    cursor: pointer;
+}
+
+#filter_button{
+    margin-top: 20px;
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+#filter_icon{
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+}
+
+#assortment_1{
+    background-image: url(../img/bakgrundsbullar.jpg);
+}
+
+#assortment_2{
+    background-image: url(../img/croassaint2.jpg);
+}
+
+#assortment_3{
+    background-image: url(../img/semla.jpg);
+}
+
+#assortment_4{
+    background-image: url(../img/chockladbulle.jpg);
+}
+
+#assortment_sec_2{
+    display: flex;
+    height: 350px;
+}
+
+#assortment_5{
+    background-image: url(../img/paj1.jpg);
+}
+
+#assortment_6{
+    background-image: url(../img/paj5.jpg);
+}
+
+#assortment_7{
+    background-image: url(../img/paj3.jpg);
+}
+
+#assortment_8{
+    background-image: url(../img/paj6.jpg);
+}
+
+#assortment_sec_3{
+    height: 350px;
+    display: flex;
+}
+
+#assortment_9{
+    background-image: url(../img/tårta1.jpg);
+}
+
+#assortment_10{
+    background-image: url(../img/tårta2.jpg);
+}
+
+#assortment_11{
+    background-image: url(../img/tårta5.jpg);
+}
+
+#assortment_12{
+    background-image: url(../img/tårta4.jpg);
+}
